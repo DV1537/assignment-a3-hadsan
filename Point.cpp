@@ -3,7 +3,6 @@
 #include<string>
 #include <cmath>
 using namespace std;
-#include "Shape.h"
 #include "Point.h"
 
 Point::Point(double* points) 
