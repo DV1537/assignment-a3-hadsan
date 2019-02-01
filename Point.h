@@ -10,8 +10,6 @@ private:
 
 
 public:
-    Point(double* points);
-    ~Point();
     std::string getType();
     double area();
     double circumference();
