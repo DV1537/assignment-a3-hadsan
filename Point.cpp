@@ -5,10 +5,6 @@
 using namespace std;
 #include "Point.h"
 
-Point::Point(double* points) 
-{
-    this->points = points;
-}
 
 double Point::area()
 {
