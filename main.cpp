@@ -63,8 +63,18 @@ int main(int argc, const char * argv[])
                 }
             }
                 
-            /*Errorheck: numeric values, line containing values, line containing an 
+            /*Errorheck: numeric values, line containing values, non-negative numbers, line containing an 
             even number of elements*/
+            
+              for(int i = 0; i < nrVerts; i++)
+            {
+                if(ptr[i] < 0)
+                {
+                    std::cout << "Line contains negative number.";
+                    exit(EXIT_FAILURE); 
+                }
+            }
+            
             if(nrVerts == 0 || !sstream.eof())
             {
                 std::cout << "Line " << Shapes + 1 << " has no/non-numeric input.\n";
